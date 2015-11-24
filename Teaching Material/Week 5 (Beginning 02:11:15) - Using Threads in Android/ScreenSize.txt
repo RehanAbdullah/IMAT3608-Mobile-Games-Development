@@ -1,0 +1,9 @@
+
+
+//Get the height and width of the screen
+DisplayMetrics metrics = new DisplayMetrics();
+getWindowManager().getDefaultDisplay().getMetrics(metrics);
+int heightPixels = metrics.heightPixels;
+int widthPixels = metrics.widthPixels;
+
+Point screenSize = new Point(widthPixels, heightPixels);
